@@ -1,0 +1,190 @@
+/*стили от laravel*/
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+$basic-color: #0277bd;
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    color: #000000;
+    background-color: #f8fafc;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+/*!стили от laravel*/
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background-color: #e9ecef;
+}
+
+.link-btn{
+    display: block;
+    width: 100%;
+    color: rgba(0,0,0,0.7);
+}
+.link-btn:hover{
+    color: rgba(0,0,0,0.85);
+    text-decoration: none;
+
+}
+.link-btn:active{
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+}
+.link-btn h1, .link-btn h2, .link-btn h3{
+    margin: 0;
+}
+
+.general-btn{
+    width: 100%;
+}
+
+.code404{
+    border-right: 2px solid;
+    font-size: 26px;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+.message404{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+    border-radius: .25rem;
+    color: rgba(0,0,0,1);
+}
+.nav-tabs .nav-link{
+    border-radius: .25rem;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+    padding: 0;
+}
+.nav-tabs {
+    border-bottom: none;
+    font-size: 1.5rem;
+}
+.nav-item a{
+    color: rgba(0,0,0,0.7);
+}
+.btn-primary{
+    background-color: $basic-color;
+}
+
+@media (min-width: 1200px){
+    .modal-xl {
+        max-width: 90%;
+    }
+}
+
+
+//кнопки с обводкой
+.link-btn{
+    margin: 10px 0;
+    border-radius: .25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.link-btn:hover, .link-box:hover{
+    border-color: rgba(0,0,0,0.85)
+}
+.link-btn:active, .link-box:active{
+    border-color: rgba(0,0,0,1)
+}
+
+.link-box{
+    width: 100%;
+    height: 100%;
+    border-radius: .25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.link-box .link-btn{
+    background: none;
+    border: none;
+}
+
+//кнопки с обводкой
+
+
+@media (min-width: 960px){
+    .min-height{
+        min-height: 27vh;
+    }
+}
+@media (max-width: 440px){
+    .container-fluid h2{
+        font-size: 1.7rem;
+    }
+    .link-btn h1{
+        font-size: 2.3rem;
+    }
+    .table-sm td, .table-sm th {
+        padding: .1rem;
+    }
+    .nav-tabs {
+        font-size: 1.3rem;
+    }
+    .tab-pane h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+.custom-file-label::after {
+    content: "Выбрать";
+    background-color: $basic-color;
+    color: white;
+}
+.custom-file-input:hover{
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar-button {
+    background-repeat:no-repeat;
+    width: 10px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #c9c5c5;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #bfbbbb;
+}
+
+::-webkit-resizer{
+    background-repeat:no-repeat;
+    width:10px;
+    height:0px
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
